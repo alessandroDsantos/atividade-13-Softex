@@ -1,0 +1,18 @@
+
+nome = input("Digite o nome do aluno: ")
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+faltas = int(input("Digite o número de faltas: "))
+
+media = (nota1 + nota2) / 2
+
+if (media >= 7.0) and (faltas < 3):
+    print(nome,"foi Aprovado, com média de",media,"e com",faltas,"falta(s).")
+else:
+    if (media < 7.0) and (faltas > 3):
+      print(nome,"foi Reprovado por falta e por média menor que 7.0!")
+    else:
+      if (faltas > 3):
+        print(nome,"foi Reprovado por falta!")
+      else:
+        print(nome,"foi Reprovado por média menor que 7.0!")
